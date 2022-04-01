@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+img {
+    border-radius: 8px;
+}
+
+h1 {
+    position: relative;
+    font-family: 'BIZ UDMincho', serif;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    margin-top: 100px;
+    margin-bottom: 0.04px;
+}
+
+
+#underline {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    margin-bottom: 150px;
+}
+
+#mainbody {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    align-items:center;
+    width:400px;
+    text-align: center;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+#friedrice {
+    border: solid black;
+    box-shadow: 0 6px 50px rgba(0, 0, 0, 1.0);
+}
+
+#ramen {
+    border: solid black;
+    box-shadow: 0 6px 50px rgba(0, 0, 0, 1.0);
+    border-radius: 11px;
+    height: 406px;
+}
+
+#sushi {
+    border: solid black;
+    box-shadow: 0 6px 50px rgba(0, 0, 0, 1.0);
+    border-radius: 11px;
+    height: 406px;
+}
+
+#friedrice_hover, #ramen_hover, #sushi_hover {
+    position: absolute;
+    border-radius: 8px;
+    width: 250px;
+    height: 400px;
+    background: rgba(0,0,0, 0.6);
+    font-family: 'BIZ UDMincho', serif;
+    color:aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+#friedrice_hover:hover {
+    opacity: 1;
+}
+
+#ramen_hover:hover {
+    opacity: 1;
+}
+
+#sushi_hover:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    #mainbody {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%; 
+        margin: 0 auto;
+        height: 90vh;
+    }
+
+    .item {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
